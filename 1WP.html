@@ -1,0 +1,231 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .button-group1 {
+          text-align: center;
+        }
+        
+        button {
+          display: inline-block;
+          margin: 10px;
+        }
+        
+        button img {
+          display: block;
+          margin: 0 auto;
+        }
+      </style>
+
+
+
+
+<style>
+    .button-group2 {
+      text-align: center;
+    }
+    
+    button {
+      display: inline-block;
+      margin: 10px;
+    }
+    
+    button img {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+
+
+  <style>
+
+
+
+  </style>
+
+
+
+
+</head>
+
+
+<body  style="background-color: rgb(64, 64, 71);">
+
+  
+
+    
+    
+    <!-- <img style="display: block; margin: 0 auto;" src="myimg.png" alt="loading..." width="100" height="100">
+
+    <h2 style="text-align: center;">My name is neetesh</h2>
+     -->
+   
+    
+     
+
+     <div>
+
+        <img style="display: block; margin: 0 auto;" src="myimg.png" alt="loading..." width="100" height="100">
+
+        <h2  style="text-align: center;"   id="typed-text"> </h2>
+        
+        <script>
+          const text = "I am Neetesh Parihar ! ";
+          const typedText = document.getElementById("typed-text");
+          let index = 0;
+          let isTyping = true;
+        
+          function typeText() {
+            if (isTyping) {
+              if (index < text.length) {
+                typedText.textContent += text[index];
+                index++;
+                setTimeout(typeText, 100); // adjust the speed here
+              } else {
+                isTyping = false;
+                setTimeout(reverseText, 1000); // wait 1 second before reversing
+              }
+            }
+          }
+        
+          function reverseText() {
+            if (!isTyping) {
+              if (index > 0) {
+                typedText.textContent = typedText.textContent.substring(0, index - 1);
+                index--;
+                setTimeout(reverseText, 100); // adjust the speed here
+              } else {
+                isTyping = true;
+                setTimeout(typeText, 1000); // wait 1 second before typing again
+              }
+            }
+          }
+        
+          typeText(); // start the typing effect
+        </script>
+
+
+     </div>
+         
+     <h4  style="text-align: center;">  my bookmarks </h5>
+     <br>
+
+     <div class="button-group1" >
+
+ 
+        <button  id="b1"   style="margin: 10px;">
+          
+
+            <a href="https://www.instagram.com/"  id="instagram"> 
+                <img    src="https://th.bing.com/th/id/OIP.shMLwGIsbDrfGhWzmHp0mQHaF7?rs=1&pid=ImgDetMain" alt="instagram"  width="60" height="60"         >
+               
+            </a>  
+            <br> 
+            <label for="instagram">Instagram</label>
+      
+        </button>
+           
+        
+
+
+        <button id="b2"   style="margin: 10px;" >
+            <a href="https://youtube.com/" id="youtube">
+              <img src="yt.png" alt="youtube" width="60" height="60">
+            </a>
+            <br>
+            <label for="youtube">YouTube</label>
+          </button>
+
+
+          
+          <button id="b3"  style="margin: 10px;">
+            <a href="https://developer.mozilla.org/en-US/" id="mozilla">
+              <img src="mdn.png" alt="mozilla" width="60" height="60">
+            </a>
+            <br>
+            <label for="mozilla">Mozilla</label>
+          </button>
+          
+          <button id="b4"   style="margin: 10px;" >
+            <a href="https://chat.openai.com/" id="openai">
+              <img src="chat.png" alt="openai" width="60" height="60">
+            </a>
+            <br>
+            <label for="openai">OpenAI</label>
+          </button>
+          
+          <button id="b5"   style="margin: 10px;">
+            <a href="https://codeforces.com/contests" id="codeforces">
+              <img src="codeforce.png" alt="codeforces" width="60" height="60">
+            </a>
+            <br>
+            <label for="codeforces">CodeForces</label>
+          </button>
+
+
+     </div>
+
+
+    
+     
+
+
+        <div class="button-group2">
+
+          
+          <button id="b6"   style="margin: 10px;">
+            <a href="https://cp-algorithms.com/index.html" id="cp-algorithms">
+              <img src="Calgo.PNG" alt="cp-algorithms" width="60" height="60">
+            </a>
+            <br>
+            <label for="cp-algorithms">CP Algo</label>
+          </button>
+          
+          <button id="b7   style="margin: 10px;" >
+            <a href="https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/view" id="google-drive">
+              <img src="dsa.png" alt="google-drive" width="60" height="60">
+            </a>
+            <br>
+            <label for="google-drive">Google Drive</label>
+          </button>
+          
+          <button id="b8"   style="margin: 10px;">
+            <a href="https://www.microsoft.com/en-in/aiodyssey" id="microsoft">
+              <img src="mst.png" alt="microsoft" width="60" height="60">
+            </a>
+            <br>
+            <label for="microsoft">Microsoft</label>
+          </button>
+          
+          <button id="b9"  style="margin: 10px;">
+            <a href="https://www.coursera.org/degrees" id="coursera">
+              <img src="coursera.png" alt="coursera" width="60" height="60">
+            </a>
+            <br>
+            <label for="coursera">Coursera</label>
+          </button>
+          
+          <button id="b10"   style="margin: 10px;">
+            <a href="https://cs50.harvard.edu/ai/2024/notes/0/" id="harvard">
+              <img src="harvard.png" alt="harvard" width="60" height="60">
+            </a>
+            <br>
+            <label for="harvard">Harvard</label>
+          </button>
+          
+         
+        </div>
+       
+
+    
+</body>
+
+
+</html>
